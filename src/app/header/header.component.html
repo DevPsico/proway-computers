@@ -1,0 +1,23 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">Sua marca </span><span class="main-header__title--orange"> Aqui</span>
+    </h1>
+    <div class="container">
+        <nav class="main-header__menu">
+            <ul>
+                <a routerLink="/produtos/">Produtos</a>
+                <a routerLink="/carrinho/">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrinho
+                    <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                </a>
+                <a routerLink="/contato/">Contato</a>
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+            </ul>
+        </nav>
+       <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
